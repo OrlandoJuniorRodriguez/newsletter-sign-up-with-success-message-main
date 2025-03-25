@@ -1,0 +1,15 @@
+:root {
+    --red: hsl(4, 100%, 67%);
+    --pink: hsl(326, 100%, 75%);
+    --darkBlue: hsl(234, 29%, 20%);
+    --lightBlue: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --white: hsl(0, 0%, 100%); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}

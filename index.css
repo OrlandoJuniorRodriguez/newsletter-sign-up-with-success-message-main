@@ -1,0 +1,159 @@
+body {
+    height: 100vh;
+    display: flex;
+    background: var(--lightBlue);
+    justify-content: center;
+    align-items: center;
+    min-width: 831px;
+    min-height: 500px;
+}
+
+.contenido {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.imagen_movil {
+    display: none;
+}
+
+.contenido > div {
+    width: 375px;
+    margin: 0 55px 0 55px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.icono_lista {
+    margin-right: 10px;
+}
+
+ul > li {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+label > span {  
+    display: none;
+    color: var(--red);
+}
+
+form > input {
+    padding: 15px;
+    border-radius: 8px;
+    border: solid var(--grey) 0.1px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form > input::placeholder {
+    color: var(--grey);
+}
+
+.correo_rojo::placeholder {
+    color: var(--red);
+}
+
+form > input:focus {
+    border: 0.1px solid black; 
+    outline: none;
+}
+
+button {
+    background-color: var(--darkBlue);
+    color: var(--white);
+    margin-top: 20px;
+    padding: 17px;
+    border-radius: 8px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to left, var(--red), var(--pink));
+}
+
+.imagen {
+    height: 450px;
+    margin: 20px 20px 20px 0;
+}
+
+.alerta {
+    display: none;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 45px;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.icono_confirmacion {
+    width: 70px;
+}
+
+@media (max-width: 450px) {
+
+    body {
+        all: unset;
+    }
+
+    .imagen_movil {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenido {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    .imagen {
+        display: none;
+        width: auto;
+    }
+
+    .contenido > div {
+        width: auto;
+        margin: 0 25px 0 25px;
+    }
+
+    .alerta {
+        height: 100vh;
+        padding: 125px 25px 60px 25px;
+        border-radius: unset;
+        width: auto;
+    }
+
+    .alerta > button {
+        margin-top: auto;
+    }
+}

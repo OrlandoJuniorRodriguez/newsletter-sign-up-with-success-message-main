@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Sign In</title>
+
+</head>
+
+<body>
+  <main>
+    <section class="contenido">
+      <img class="imagen_movil" src="/assets/images/illustration-sign-up-mobile.svg" alt="">
+      <div>
+        <h1>Stay Updated!</h1><br>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p><br>
+        <ul>
+          <li><img class="icono_lista" src="/assets/images/icon-list.svg">Product discovery and building what matters
+          </li>
+          <li><img class="icono_lista" src="/assets/images/icon-list.svg">Measuring to ensure updates are a success</li>
+          <li><img class="icono_lista" src="/assets/images/icon-list.svg">And much more!</li>
+        </ul><br>
+        <form action="">
+          <label >Email address<span class="error_email">Valid email required</span></label>
+          <input class="correo" type="email" placeholder="ejemplo@gmail.com" required>
+          <button type="submit" aria-label="Boton subscripcion" onclick="subscribirse(event)">Subscribe to Monthly Newsletter</button>
+        </form>
+      </div>
+      <img class="imagen" src="./assets/images/illustration-sign-up-desktop.svg">
+    </section>
+    <section class="alerta">
+      <img class="icono_confirmacion" src="/assets/images/icon-success.svg" alt=""><br>
+      <h1>Thanks for subscribing!</h1><br>
+      <p class="mensaje_correo"></p><br>
+      <button  onclick="ocultar_mensaje()">Dismiss messege</button>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
