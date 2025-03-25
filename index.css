@@ -130,6 +130,7 @@ button:hover {
 
     .contenido {
         flex-direction: column;
+        min-width: 230px;
     }
 
     h1 {
